@@ -17,10 +17,38 @@
 		64689F161DD2F1A70057959D /* FuelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F151DD2F1A70057959D /* FuelManager.swift */; };
 		64689F191DD316B80057959D /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F181DD316B80057959D /* LogCell.swift */; };
 		64689F1C1DD323FB0057959D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F1B1DD323FB0057959D /* Utils.swift */; };
+		64689F361DD345D00057959D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64689F351DD345CF0057959D /* NotificationCenter.framework */; };
+		64689F391DD345D00057959D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F381DD345D00057959D /* TodayViewController.swift */; };
+		64689F3C1DD345D00057959D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64689F3A1DD345D00057959D /* MainInterface.storyboard */; };
+		64689F401DD345D00057959D /* Fuel Console.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64689F341DD345CF0057959D /* Fuel Console.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94B455486A7DBD25E06D3E2C /* RolloutGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519863CBCE62843CECE3B35A /* RolloutGenerated.swift */; };
 		C8728CB267D68BF5881D9E86 /* Pods_Fuel_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */; };
 		CCB3F1B48053AC739820584A /* RolloutSwiftInjectionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64689F3E1DD345D00057959D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64689EEE1DD2EFD20057959D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64689F331DD345CF0057959D;
+			remoteInfo = "Fuel Console";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64689F441DD345D00057959D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64689F401DD345D00057959D /* Fuel Console.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24683EA80EFE4B1426EB5113 /* Pods-Fuel Log.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Log.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Log/Pods-Fuel Log.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +65,11 @@
 		64689F151DD2F1A70057959D /* FuelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelManager.swift; sourceTree = "<group>"; };
 		64689F181DD316B80057959D /* LogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
 		64689F1B1DD323FB0057959D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		64689F341DD345CF0057959D /* Fuel Console.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fuel Console.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64689F351DD345CF0057959D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		64689F381DD345D00057959D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		64689F3B1DD345D00057959D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		64689F3D1DD345D00057959D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8736EC10CD7B09B635520CF /* Pods-Fuel Log.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Log.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Log/Pods-Fuel Log.debug.xcconfig"; sourceTree = "<group>"; };
 		F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutSwiftInjectionBridge.swift; path = Pods/Rollout.io/RolloutSwift/RolloutSwiftInjectionBridge.swift; sourceTree = "<group>"; };
@@ -48,6 +81,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8728CB267D68BF5881D9E86 /* Pods_Fuel_Log.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64689F311DD345CF0057959D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64689F361DD345D00057959D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				64689EF81DD2EFD20057959D /* Fuel Log */,
+				64689F371DD345D00057959D /* Fuel Console */,
 				64689EF71DD2EFD20057959D /* Products */,
 				33D5150B29C1D7F18A7AA755 /* Pods */,
 				CAA2FF19C84414075930F22C /* Frameworks */,
@@ -87,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				64689EF61DD2EFD20057959D /* Fuel Log.app */,
+				64689F341DD345CF0057959D /* Fuel Console.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,10 +200,21 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		64689F371DD345D00057959D /* Fuel Console */ = {
+			isa = PBXGroup;
+			children = (
+				64689F381DD345D00057959D /* TodayViewController.swift */,
+				64689F3A1DD345D00057959D /* MainInterface.storyboard */,
+				64689F3D1DD345D00057959D /* Info.plist */,
+			);
+			path = "Fuel Console";
+			sourceTree = "<group>";
+		};
 		CAA2FF19C84414075930F22C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */,
+				64689F351DD345CF0057959D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,15 +234,34 @@
 				5EFA828226A6C27A544A0F9C /* [CP] Embed Pods Frameworks */,
 				B11C75C81037639347ED1D58 /* [CP] Copy Pods Resources */,
 				5E5F829EF200C00D2ED0B56E /* Rollout.io post-build */,
+				64689F441DD345D00057959D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				64689F3F1DD345D00057959D /* PBXTargetDependency */,
 			);
 			name = "Fuel Log";
 			productName = "Fuel Log";
 			productReference = 64689EF61DD2EFD20057959D /* Fuel Log.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64689F331DD345CF0057959D /* Fuel Console */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64689F431DD345D00057959D /* Build configuration list for PBXNativeTarget "Fuel Console" */;
+			buildPhases = (
+				64689F301DD345CF0057959D /* Sources */,
+				64689F311DD345CF0057959D /* Frameworks */,
+				64689F321DD345CF0057959D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fuel Console";
+			productName = "Fuel Console";
+			productReference = 64689F341DD345CF0057959D /* Fuel Console.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +274,11 @@
 				ORGANIZATIONNAME = QBurst;
 				TargetAttributes = {
 					64689EF51DD2EFD20057959D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5DYFD9UMYF;
+						ProvisioningStyle = Automatic;
+					};
+					64689F331DD345CF0057959D = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5DYFD9UMYF;
 						ProvisioningStyle = Automatic;
@@ -221,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				64689EF51DD2EFD20057959D /* Fuel Log */,
+				64689F331DD345CF0057959D /* Fuel Console */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +312,14 @@
 				64689F041DD2EFD20057959D /* LaunchScreen.storyboard in Resources */,
 				64689F011DD2EFD20057959D /* Assets.xcassets in Resources */,
 				64689EFF1DD2EFD20057959D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64689F321DD345CF0057959D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64689F3C1DD345D00057959D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +418,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64689F301DD345CF0057959D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64689F391DD345D00057959D /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64689F3F1DD345D00057959D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64689F331DD345CF0057959D /* Fuel Console */;
+			targetProxy = 64689F3E1DD345D00057959D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64689EFD1DD2EFD20057959D /* Main.storyboard */ = {
@@ -348,6 +451,14 @@
 				64689F031DD2EFD20057959D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64689F3A1DD345D00057959D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64689F3B1DD345D00057959D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -450,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8736EC10CD7B09B635520CF /* Pods-Fuel Log.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Log/Info.plist";
@@ -465,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24683EA80EFE4B1426EB5113 /* Pods-Fuel Log.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Log/Info.plist";
@@ -472,6 +585,32 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.Fuel-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EXEC = "$(SRCROOT)/Pods/Rollout.io/lib/swift_wrapper/swiftc";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		64689F411DD345D00057959D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5DYFD9UMYF;
+				INFOPLIST_FILE = "Fuel Console/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.Fuel-Log.Fuel-Console";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		64689F421DD345D00057959D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5DYFD9UMYF;
+				INFOPLIST_FILE = "Fuel Console/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.Fuel-Log.Fuel-Console";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -496,6 +635,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		64689F431DD345D00057959D /* Build configuration list for PBXNativeTarget "Fuel Console" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64689F411DD345D00057959D /* Debug */,
+				64689F421DD345D00057959D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

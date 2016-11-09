@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Fuel_Console" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PZN-ru-bVU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVB-Si-vNt">
+                                <rect key="frame" x="8" y="0.0" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yU0-De-aFJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45.4 km/l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEJ-2N-X0d">
+                                <rect key="frame" x="8" y="30" width="179" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69.54 ₹/l" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-WM-KHL">
+                                <rect key="frame" x="187" y="0.0" width="125" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="7yM-zQ-UPs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FGh-WM-KHL" secondAttribute="bottom" id="2Ex-TI-LVm"/>
+                            <constraint firstAttribute="trailing" secondItem="FGh-WM-KHL" secondAttribute="trailing" constant="8" id="4zs-18-3M9"/>
+                            <constraint firstItem="FGh-WM-KHL" firstAttribute="top" secondItem="PZN-ru-bVU" secondAttribute="top" id="CVx-ZG-DLk"/>
+                            <constraint firstItem="kEJ-2N-X0d" firstAttribute="leading" secondItem="PZN-ru-bVU" secondAttribute="leading" constant="8" id="Lt8-B7-GNw"/>
+                            <constraint firstItem="FGh-WM-KHL" firstAttribute="leading" secondItem="MVB-Si-vNt" secondAttribute="trailing" id="MAv-qN-XLd"/>
+                            <constraint firstItem="MVB-Si-vNt" firstAttribute="leading" secondItem="PZN-ru-bVU" secondAttribute="leading" constant="8" id="fwq-Fz-s5i"/>
+                            <constraint firstAttribute="bottom" secondItem="kEJ-2N-X0d" secondAttribute="bottom" id="gzC-tM-bhM"/>
+                            <constraint firstItem="FGh-WM-KHL" firstAttribute="leading" secondItem="kEJ-2N-X0d" secondAttribute="trailing" id="k8e-Ot-huM"/>
+                            <constraint firstItem="MVB-Si-vNt" firstAttribute="top" secondItem="PZN-ru-bVU" secondAttribute="top" id="ru6-Fd-xnj"/>
+                            <constraint firstItem="kEJ-2N-X0d" firstAttribute="top" secondItem="MVB-Si-vNt" secondAttribute="bottom" id="s3M-Ra-Wo0"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="60"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="MVB-Si-vNt" id="Svh-po-RU6"/>
+                        <outlet property="mileageLabel" destination="kEJ-2N-X0d" id="xtj-Ai-k30"/>
+                        <outlet property="priceLabel" destination="FGh-WM-KHL" id="q5e-k6-YJL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
