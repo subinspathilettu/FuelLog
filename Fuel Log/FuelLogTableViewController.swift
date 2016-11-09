@@ -24,10 +24,8 @@ class FuelLogTableViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt
 		indexPath: IndexPath) -> UITableViewCell {
 
-		let cell = tableView.dequeueReusableCell(withIdentifier: "LogCellIdentifier")
-
-		let fuelLog = FuelManager.shared.fuelLogs[indexPath.row]
-		cell?.textLabel?.text = String(describing: fuelLog.odometer)
+		let cell = tableView.dequeueReusableCell(withIdentifier: "LogCellIdentifier") as? LogCell
+		cell?.fuelLog = FuelManager.shared.fuelLogs[indexPath.row]
 		return cell!
 	}
 

@@ -15,6 +15,8 @@
 		64689F121DD2F1990057959D /* FuelLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F101DD2F1990057959D /* FuelLogTableViewController.swift */; };
 		64689F141DD2F19F0057959D /* FuelLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F131DD2F19F0057959D /* FuelLog.swift */; };
 		64689F161DD2F1A70057959D /* FuelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F151DD2F1A70057959D /* FuelManager.swift */; };
+		64689F191DD316B80057959D /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F181DD316B80057959D /* LogCell.swift */; };
+		64689F1C1DD323FB0057959D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F1B1DD323FB0057959D /* Utils.swift */; };
 		94B455486A7DBD25E06D3E2C /* RolloutGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519863CBCE62843CECE3B35A /* RolloutGenerated.swift */; };
 		C8728CB267D68BF5881D9E86 /* Pods_Fuel_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */; };
 		CCB3F1B48053AC739820584A /* RolloutSwiftInjectionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */; };
@@ -33,6 +35,8 @@
 		64689F101DD2F1990057959D /* FuelLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelLogTableViewController.swift; sourceTree = "<group>"; };
 		64689F131DD2F19F0057959D /* FuelLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelLog.swift; sourceTree = "<group>"; };
 		64689F151DD2F1A70057959D /* FuelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelManager.swift; sourceTree = "<group>"; };
+		64689F181DD316B80057959D /* LogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
+		64689F1B1DD323FB0057959D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8736EC10CD7B09B635520CF /* Pods-Fuel Log.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Log.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Log/Pods-Fuel Log.debug.xcconfig"; sourceTree = "<group>"; };
 		F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutSwiftInjectionBridge.swift; path = Pods/Rollout.io/RolloutSwift/RolloutSwiftInjectionBridge.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		64689EF81DD2EFD20057959D /* Fuel Log */ = {
 			isa = PBXGroup;
 			children = (
+				64689F1A1DD323ED0057959D /* Utils */,
+				64689F171DD3169E0057959D /* CustomCells */,
 				64689F0E1DD2F17B0057959D /* Models */,
 				64689F0D1DD2F1720057959D /* Managers */,
 				64689F0C1DD2F1640057959D /* ViewControllers */,
@@ -133,6 +139,22 @@
 				64689F131DD2F19F0057959D /* FuelLog.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		64689F171DD3169E0057959D /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				64689F181DD316B80057959D /* LogCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		64689F1A1DD323ED0057959D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				64689F1B1DD323FB0057959D /* Utils.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		CAA2FF19C84414075930F22C /* Frameworks */ = {
@@ -299,6 +321,8 @@
 			files = (
 				64689F111DD2F1990057959D /* AddLogTableViewController.swift in Sources */,
 				64689EFA1DD2EFD20057959D /* AppDelegate.swift in Sources */,
+				64689F1C1DD323FB0057959D /* Utils.swift in Sources */,
+				64689F191DD316B80057959D /* LogCell.swift in Sources */,
 				64689F161DD2F1A70057959D /* FuelManager.swift in Sources */,
 				64689F141DD2F19F0057959D /* FuelLog.swift in Sources */,
 				64689F121DD2F1990057959D /* FuelLogTableViewController.swift in Sources */,
