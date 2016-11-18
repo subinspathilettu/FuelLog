@@ -53,6 +53,8 @@
 /* Begin PBXFileReference section */
 		24683EA80EFE4B1426EB5113 /* Pods-Fuel Log.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Log.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Log/Pods-Fuel Log.release.xcconfig"; sourceTree = "<group>"; };
 		519863CBCE62843CECE3B35A /* RolloutGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutGenerated.swift; path = Pods/Rollout.io/RolloutSwift/RolloutGenerated.swift; sourceTree = "<group>"; };
+		642618351DD9D74B007C6573 /* Fuel Console.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fuel Console.entitlements"; sourceTree = "<group>"; };
+		642618361DD9D77A007C6573 /* Fuel Log.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fuel Log.entitlements"; sourceTree = "<group>"; };
 		64689EF61DD2EFD20057959D /* Fuel Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64689EF91DD2EFD20057959D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64689EFE1DD2EFD20057959D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		64689EF81DD2EFD20057959D /* Fuel Log */ = {
 			isa = PBXGroup;
 			children = (
+				642618361DD9D77A007C6573 /* Fuel Log.entitlements */,
 				64689F1A1DD323ED0057959D /* Utils */,
 				64689F171DD3169E0057959D /* CustomCells */,
 				64689F0E1DD2F17B0057959D /* Models */,
@@ -203,6 +206,7 @@
 		64689F371DD345D00057959D /* Fuel Console */ = {
 			isa = PBXGroup;
 			children = (
+				642618351DD9D74B007C6573 /* Fuel Console.entitlements */,
 				64689F381DD345D00057959D /* TodayViewController.swift */,
 				64689F3A1DD345D00057959D /* MainInterface.storyboard */,
 				64689F3D1DD345D00057959D /* Info.plist */,
@@ -277,11 +281,21 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5DYFD9UMYF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					64689F331DD345CF0057959D = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5DYFD9UMYF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -563,6 +577,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Fuel Log/Fuel Log.entitlements";
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Log/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -579,6 +594,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Fuel Log/Fuel Log.entitlements";
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Log/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -592,6 +608,7 @@
 		64689F411DD345D00057959D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Fuel Console/Fuel Console.entitlements";
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Console/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -605,6 +622,7 @@
 		64689F421DD345D00057959D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Fuel Console/Fuel Console.entitlements";
 				DEVELOPMENT_TEAM = 5DYFD9UMYF;
 				INFOPLIST_FILE = "Fuel Console/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -643,6 +661,7 @@
 				64689F421DD345D00057959D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

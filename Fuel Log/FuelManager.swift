@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FuelManager {
+public class FuelManager {
 
 	public static let shared = FuelManager()
 	public var fuelLogs = [FuelLog]()
@@ -65,6 +65,26 @@ class FuelManager {
 	}
 
 	func saveLogs() {
+
+		if !fuelLogs.isEmpty {
+			let log = fuelLogs.first
+			let userDefaults = UserDefaults(suiteName: "group.com.qburst.Fuel-Log")
+
+			if let mileage = log?.mileagePerLitre {
+				userDefaults?.set(String(describing: mileage.roundTo(places: 2)),
+				                  forKey: "FuelLogMilege")
+			}
+
+			if let price = log?.pricePerLitre {
+				userDefaults?.set(String(describing: price.roundTo(places: 2)),
+				                  forKey: "FuelLogPrice")
+			}
+
+			if let distance = log?.distanceInKiloMeter {
+				userDefaults?.set(String(describing: distance.roundTo(places: 2)),
+				                  forKey: "FuelLogDistance")
+			}
+		}
 
 		let path = getArchivePath()
 		NSKeyedArchiver.archiveRootObject(fuelLogs,
