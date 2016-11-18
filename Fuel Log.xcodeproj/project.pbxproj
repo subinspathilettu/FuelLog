@@ -21,6 +21,7 @@
 		64689F391DD345D00057959D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64689F381DD345D00057959D /* TodayViewController.swift */; };
 		64689F3C1DD345D00057959D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64689F3A1DD345D00057959D /* MainInterface.storyboard */; };
 		64689F401DD345D00057959D /* Fuel Console.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64689F341DD345CF0057959D /* Fuel Console.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		647A3D591DDEF890009F5A82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 647A3D581DDEF890009F5A82 /* icon.png */; };
 		94B455486A7DBD25E06D3E2C /* RolloutGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519863CBCE62843CECE3B35A /* RolloutGenerated.swift */; };
 		C8728CB267D68BF5881D9E86 /* Pods_Fuel_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */; };
 		CCB3F1B48053AC739820584A /* RolloutSwiftInjectionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */; };
@@ -72,6 +73,7 @@
 		64689F381DD345D00057959D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		64689F3B1DD345D00057959D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		64689F3D1DD345D00057959D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647A3D581DDEF890009F5A82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		9F0AFF46210156A20BFC11C6 /* Pods_Fuel_Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8736EC10CD7B09B635520CF /* Pods-Fuel Log.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Log.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Log/Pods-Fuel Log.debug.xcconfig"; sourceTree = "<group>"; };
 		F3DF5776CA2057351985C86A /* RolloutSwiftInjectionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutSwiftInjectionBridge.swift; path = Pods/Rollout.io/RolloutSwift/RolloutSwiftInjectionBridge.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				642618361DD9D77A007C6573 /* Fuel Log.entitlements */,
+				647A3D581DDEF890009F5A82 /* icon.png */,
 				64689F1A1DD323ED0057959D /* Utils */,
 				64689F171DD3169E0057959D /* CustomCells */,
 				64689F0E1DD2F17B0057959D /* Models */,
@@ -323,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647A3D591DDEF890009F5A82 /* icon.png in Resources */,
 				64689F041DD2EFD20057959D /* LaunchScreen.storyboard in Resources */,
 				64689F011DD2EFD20057959D /* Assets.xcassets in Resources */,
 				64689EFF1DD2EFD20057959D /* Main.storyboard in Resources */,

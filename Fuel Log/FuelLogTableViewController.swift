@@ -37,6 +37,27 @@ class FuelLogTableViewController: UITableViewController {
 		navigationController?.pushViewController(viewController!, animated: true)
 	}
 
+	override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+
+		return true
+	}
+
+	override func tableView(_ tableView: UITableView, editingStyleForRowAt
+		indexPath: IndexPath) -> UITableViewCellEditingStyle {
+
+		return .delete
+	}
+
+	override func tableView(_ tableView: UITableView, commit
+		editingStyle: UITableViewCellEditingStyle,
+	                         forRowAt indexPath: IndexPath) {
+
+		if editingStyle == .delete {
+			FuelManager.shared.removeLogAt(indexPath.row)
+			tableView.reloadData()
+		}
+	}
+
 	@IBAction func trash() {
 
 		let alertController = UIAlertController(title: "Fuel Logs",

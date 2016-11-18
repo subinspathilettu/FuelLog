@@ -21,27 +21,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUEL LOGGER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-oq-CJi">
-                                <rect key="frame" x="127.5" y="321" width="120" height="25"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="YEu-hm-N32">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="UzV-sQ-Xhu"/>
-                                    <constraint firstAttribute="width" constant="120" id="wwB-2M-aeT"/>
+                                    <constraint firstAttribute="height" constant="250" id="B1u-xF-gSQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="iD8-0E-ETJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46136379241943359" green="0.46402060985565186" blue="0.73762434720993042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.46136379239999997" green="0.46402060989999999" blue="0.73762434720000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hcx-oq-CJi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AMj-Jd-XFR"/>
-                            <constraint firstItem="hcx-oq-CJi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fcf-pN-vwS"/>
+                            <constraint firstItem="YEu-hm-N32" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3r8-Rd-Rp7"/>
+                            <constraint firstItem="YEu-hm-N32" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KFp-gS-CIB"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon.png" width="512" height="512"/>
+    </resources>
 </document>

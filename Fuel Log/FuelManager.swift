@@ -40,6 +40,12 @@ public class FuelManager {
 		saveLogs()
 	}
 
+	public func removeLogAt(_ index: Int) {
+
+		fuelLogs.remove(at: index)
+		saveLogs()
+	}
+
 	func processLog(_ log: FuelLog) {
 
 		let index = fuelLogs.index(of: log)
@@ -66,9 +72,10 @@ public class FuelManager {
 
 	func saveLogs() {
 
+		let userDefaults = UserDefaults(suiteName: "group.com.qburst.Fuel-Log")
+
 		if !fuelLogs.isEmpty {
 			let log = fuelLogs.first
-			let userDefaults = UserDefaults(suiteName: "group.com.qburst.Fuel-Log")
 
 			if let mileage = log?.mileagePerLitre {
 				userDefaults?.set(String(describing: mileage.roundTo(places: 2)),
@@ -84,6 +91,11 @@ public class FuelManager {
 				userDefaults?.set(String(describing: distance.roundTo(places: 2)),
 				                  forKey: "FuelLogDistance")
 			}
+		} else {
+
+			userDefaults?.set("0", forKey: "FuelLogMilege")
+			userDefaults?.set("0", forKey: "FuelLogPrice")
+			userDefaults?.set("0", forKey: "FuelLogDistance")
 		}
 
 		let path = getArchivePath()
