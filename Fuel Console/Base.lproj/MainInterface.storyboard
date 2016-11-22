@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PZN-ru-bVU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVB-Si-vNt">
@@ -32,6 +32,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEJ-2N-X0d">
                                 <rect key="frame" x="8" y="30" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a55-FF-Unk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.46136379239999997" green="0.46402060989999999" blue="0.73762434720000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -39,22 +42,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-WM-KHL">
                                 <rect key="frame" x="187" y="0.0" width="125" height="60"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1P0-6q-I3z"/>
                                     <constraint firstAttribute="width" constant="125" id="7yM-zQ-UPs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.46136379239999997" green="0.46402060989999999" blue="0.73762434720000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="muw-v4-XKW">
+                                <rect key="frame" x="0.0" y="60" width="320" height="60"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="FGh-WM-KHL" secondAttribute="bottom" id="2Ex-TI-LVm"/>
+                            <constraint firstAttribute="trailing" secondItem="muw-v4-XKW" secondAttribute="trailing" id="26M-Bu-FRm"/>
                             <constraint firstAttribute="trailing" secondItem="FGh-WM-KHL" secondAttribute="trailing" constant="8" id="4zs-18-3M9"/>
+                            <constraint firstItem="muw-v4-XKW" firstAttribute="leading" secondItem="PZN-ru-bVU" secondAttribute="leading" id="9LY-0S-Qow"/>
                             <constraint firstItem="FGh-WM-KHL" firstAttribute="top" secondItem="PZN-ru-bVU" secondAttribute="top" id="CVx-ZG-DLk"/>
+                            <constraint firstItem="muw-v4-XKW" firstAttribute="top" secondItem="kEJ-2N-X0d" secondAttribute="bottom" id="Dbz-af-6gP"/>
                             <constraint firstItem="kEJ-2N-X0d" firstAttribute="leading" secondItem="PZN-ru-bVU" secondAttribute="leading" constant="8" id="Lt8-B7-GNw"/>
                             <constraint firstItem="FGh-WM-KHL" firstAttribute="leading" secondItem="MVB-Si-vNt" secondAttribute="trailing" id="MAv-qN-XLd"/>
+                            <constraint firstAttribute="bottom" secondItem="muw-v4-XKW" secondAttribute="bottom" id="eSj-5F-8Mm"/>
                             <constraint firstItem="MVB-Si-vNt" firstAttribute="leading" secondItem="PZN-ru-bVU" secondAttribute="leading" constant="8" id="fwq-Fz-s5i"/>
-                            <constraint firstAttribute="bottom" secondItem="kEJ-2N-X0d" secondAttribute="bottom" id="gzC-tM-bhM"/>
                             <constraint firstItem="FGh-WM-KHL" firstAttribute="leading" secondItem="kEJ-2N-X0d" secondAttribute="trailing" id="k8e-Ot-huM"/>
                             <constraint firstItem="MVB-Si-vNt" firstAttribute="top" secondItem="PZN-ru-bVU" secondAttribute="top" id="ru6-Fd-xnj"/>
                             <constraint firstItem="kEJ-2N-X0d" firstAttribute="top" secondItem="MVB-Si-vNt" secondAttribute="bottom" id="s3M-Ra-Wo0"/>
@@ -65,7 +74,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="60"/>
+                    <size key="freeformSize" width="320" height="120"/>
                     <connections>
                         <outlet property="distanceLabel" destination="MVB-Si-vNt" id="Svh-po-RU6"/>
                         <outlet property="mileageLabel" destination="kEJ-2N-X0d" id="xtj-Ai-k30"/>
@@ -74,6 +83,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="138.53073463268368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wall.jpg" width="1599" height="830"/>
+    </resources>
 </document>

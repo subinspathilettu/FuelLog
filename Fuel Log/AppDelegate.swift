@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Rollout
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-		Rollout.setup(withKey:"5822b655174f748f22cf272f")
 		FuelManager.shared.fetchLogs()
 		return true
 	}
