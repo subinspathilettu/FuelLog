@@ -60,17 +60,20 @@ class FuelLogTableViewController: UITableViewController {
 
 	@IBAction func trash() {
 
-		let alertController = UIAlertController(title: "Fuel Logs",
-		                                        message: "Are you sure you want to delete all logs?",
-		                                        preferredStyle: .alert)
-		let okAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+		if !FuelManager.shared.fuelLogs.isEmpty {
 
-			FuelManager.shared.removeAllLogs()
-			self.tableView.reloadData()
-		})
-		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-		alertController.addAction(cancelAction)
-		alertController.addAction(okAction)
-		present(alertController, animated: true, completion: nil)
+			let alertController = UIAlertController(title: "Fuel Logs",
+			                                        message: "Are you sure you want to delete all logs?",
+			                                        preferredStyle: .alert)
+			let okAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+
+				FuelManager.shared.removeAllLogs()
+				self.tableView.reloadData()
+			})
+			let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+			alertController.addAction(cancelAction)
+			alertController.addAction(okAction)
+			present(alertController, animated: true, completion: nil)
+		}
 	}
 }

@@ -55,7 +55,7 @@ public class FuelManager {
 			let previousLog = fuelLogs[index! + 1]
 
 			log.distanceInKiloMeter = log.odometer - previousLog.odometer
-			log.mileagePerLitre = log.distanceInKiloMeter / previousLog.quantity
+			log.mileagePerLitre = log.distanceInKiloMeter / log.quantity
 		}
 
 		log.pricePerLitre = log.amount / log.quantity
